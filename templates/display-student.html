@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Students</title>
+</head>
+<body>
+<table>
+	<thead>
+		
+		<tr>
+			<th> Register No </th>
+			<th> Name </th>
+			<th> Mobile</th>
+			<th> Email </th>
+			<th> School </th>
+			<th> Action </th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for s in students %}
+		<tr>
+			<td> {{ s.reg_num }}</td>
+			<td> {{ s.name }}</td>
+			<td> {{ s.mobile }}</td>
+			<td> {{ s.email }}</td>
+			<td> {{ s.school }}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+	
+
+
+</table>
+
+</body>
+</html>
